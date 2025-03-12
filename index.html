@@ -1,0 +1,128 @@
+<!-- index.html
+  Author:         Jack
+  Date:           2024-07-27
+  Last revised:   2024-07-27
+  Description:    HTML for d-n-dice project
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Jack">
+  <meta name="date" content="2024-07-27">
+  <meta name="last revised" content="2024-07-27">
+  <meta name="description" content="DND Dice Roller App">
+  <meta name="key words" content="etsu, csci, csci 1720, homework, hw7">
+  <title>HW 8</title>
+  <link rel="icon" href="images/die.png">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <img src="images/bg.png" alt="background image" id="bg1">
+	<img src="images/die.png" alt="background image" id="bg2">
+  <div class="container"> <!-- outer container -->
+    <div class="calculator"> <!-- calculator div-->
+      <div class="io"> <!-- output div -->
+        <div class="row"> <!-- Dice output 1 -->
+          <div class="die">
+            <input type="text" id="d1">
+            <figcaption>D1</figcaption>
+          </div>
+          <div class="die">
+            <input type="text" id="d2">
+            <figcaption>D2</figcaption>
+          </div>
+          <div class="die">
+            <input type="text" id="d3">
+            <figcaption>D3</figcaption>
+          </div>
+          <div class="die">
+            <input type="text" id="d4">
+            <figcaption>D4</figcaption>
+          </div>
+          <div class="die">
+            <input type="text" id="d5">
+            <figcaption>D5</figcaption>
+          </div>
+        </div> <!-- end of Dice output 1 -->
+        <div class="row"> <!-- Dice output 2 -->
+          <div class="die">
+            <input type="text" id="d6">
+            <figcaption>D6</figcaption>
+          </div>
+          <div class="die">
+            <input type="text" id="d7">
+            <figcaption>D7</figcaption>
+          </div>
+          <div class="die">
+            <input type="text" id="d8">
+            <figcaption>D8</figcaption>
+          </div>
+          <div class="die">
+            <input type="text" id="d9">
+            <figcaption>D9</figcaption>
+          </div>
+          <div class="die">
+            <input type="text" id="d10">
+            <figcaption>D10</figcaption>
+          </div>
+        </div> <!-- end of Dice output 2 -->
+        <div class="row">
+          <div class="die">
+            <input type="text" id="total">
+            <figcaption>TOTAL</figcaption>
+          </div>
+          <div class="die">
+            <input type="text" id="highest">
+            <figcaption>HIGHEST</figcaption>
+          </div>
+        </div>
+      </div> <!-- end of output div -->
+      <div class="instruction">Select # of dice first,</div>
+      <div class="row"> <!-- Number of dice 1 -->
+        <button class="button">1</button>
+        <button class="button">2</button>
+        <button class="button">3</button>
+        <button class="button">4</button>
+        <button class="button">5</button>
+      </div>
+      <div class="row"> <!-- Number of dice 2 -->
+        <button class="button">6</button>
+        <button class="button">7</button>
+        <button class="button">8</button>
+        <button class="button">9</button>
+        <button class="button">10</button>
+      </div>
+      <div class="instruction">Then die type</div>
+      <div class="row"> <!-- Die type -->
+        <button class="button operator" value="4">D4</button>
+        <button class="button operator" value="4">D6</button>
+        <button class="button operator" value="4">D8</button>
+        <button class="button operator" value="4">D10</button>
+        <button class="button operator" value="4">D12</button>
+        <button class="button operator" value="4">D20</button>
+      </div>
+      <div class="row"> <!-- Re-roll & Clear -->
+        <button class="button operator clear">RE-ROLL</button>
+        <button class="button operator clear">CLEAR</button>
+      </div>
+      <div id="roll-window"></div>
+    </div> <!-- end calculator -->
+    <!-- Alert window -->
+		<div id="alert">
+			<div>
+				<p>
+					First, select how many dice to roll,
+				</p>
+				<p>
+					Then the die type you want to roll
+				</p>
+			</div>
+			<button id="ok">OK</button>
+		</div>
+  </div> <!-- end of outer container -->
+</body>
+</html>
