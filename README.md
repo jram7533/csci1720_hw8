@@ -1,4 +1,4 @@
-# csci1720_hw8
+# hw9_d-n-dice3
 Repo for HW 8
 
 We will use this repo as the starting point for Homework 9
